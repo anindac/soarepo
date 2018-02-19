@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ns0:process xmlns:ns0="http://xmlns.oracle.com/EventHandlerPublisherComposite/EventHandlerPublisherComposite/EventHandlerPublisherBPELProcess" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/EventHandlerPublisherComposite/EventHandlerPublisherComposite/EventHandlerPublisherBPELProcess file:/C:/JDeveloper/mywork/MySOAApp/Project1/SOA/Schemas/EventHandlerPublisherBPELProcess.xsd">
+   <ns0:input>10</ns0:input>
+</ns0:process>

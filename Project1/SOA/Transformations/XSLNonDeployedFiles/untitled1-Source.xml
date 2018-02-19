@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<process xmlns="http://xmlns.oracle.com/EventHandlerPublisherComposite/EventHandlerPublisherComposite/EventHandlerPublisherBPELProcess">
+   <input>input1.txt.abc</input>
+</process>

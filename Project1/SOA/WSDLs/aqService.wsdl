@@ -1,0 +1,29 @@
+<wsdl:definitions
+     name="aqService"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/aq/LoggingEventHandlerSubscriberComposite/Project1/aqService"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/aq/LoggingEventHandlerSubscriberComposite/Project1/aqService"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:pc="http://xmlns.oracle.com/pcbpel/"
+     xmlns:msg_out="http://xmlns.oracle.com/EventDetails"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="loggingDequeue_plt" >
+    <plt:role name="loggingDequeue_role" >
+      <plt:portType name="tns:loggingDequeue_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/EventDetails" schemaLocation="oramds:/apps/CSF/common/xsd/EventDetails.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="eventMessages_msg">
+        <wsdl:part name="eventMessages" element="msg_out:eventMessages"/>
+    </wsdl:message>
+    <wsdl:portType name="loggingDequeue_ptt">
+        <wsdl:operation name="loggingDequeue">
+            <wsdl:input message="tns:eventMessages_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
