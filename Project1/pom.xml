@@ -28,7 +28,7 @@
         <!-- These parameters are used by the compile goal -->
         <scac.input.dir>Project1/SOA/</scac.input.dir>
         <scac.output.dir>Project1/target</scac.output.dir>
-        <scac.inputProject1/composite.xml</scac.input>
+        <scac.input>Project1/composite.xml</scac.input>
         <scac.output>Project1/scac/out.xml</scac.output>
         <scac.error>Project1/scac/error.txt</scac.error>
         <scac.displayLevel>1</scac.displayLevel>
