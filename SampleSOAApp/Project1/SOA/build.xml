@@ -16,8 +16,8 @@
 	<ant antfile="C:/Oracle/Middleware_122130/soa/bin/ant-sca-package.xml" target="package" inheritall="false">
 	<property name="oracle.home" value="C:/Oracle/Middleware_122130/soa"/>
 	<property name="compositeDir" value="${basedir}/../SOA"/>
-	<property name="compositeName" value="Project1"/>
-	<property name="revision" value="1.0"/>
+	<property name="composite.name" value="Project1"/>
+	<property name="composite.revision" value="1.0"/>
 	
 	<!-- needed for adf config -->
 	<property name="scac.application.home" value="${basedir}/../.."/>
