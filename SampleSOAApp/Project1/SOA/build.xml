@@ -14,7 +14,7 @@
 	<mkdir dir="${sca-inf.classes.dir}"/>
 <echo>222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</echo>	
 	<ant antfile="C:/Oracle/Middleware_122130/soa/bin/ant-sca-package.xml" target="package" inheritall="false">
-	<property name="oracle.home" value="${oracle.home}"/>
+	<property name="oracle.home" value="C:/Oracle/Middleware_122130/soa"/>
 	<property name="compositeDir" value="${basedir}/../SOA"/>
 	
 	<!-- needed for adf config -->
