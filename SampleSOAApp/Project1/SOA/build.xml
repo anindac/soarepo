@@ -23,10 +23,10 @@
 	<property name="scac.application.home" value="${basedir}/../.."/>
 
 	<!-- name of the composite -->
-	<property name="compositeName" value="${composite.name}"/>
+	<property name="compositeName" value="Project1"/>
 
 	<!-- revision of the composite -->
-	<property name="revision" value="${composite.revision}"/>
+	<property name="revision" value="1.0"/>
 
 	<!-- java.passed.home passed to scac, this property will be
 		overwritten to the env.JAVA_HOME if such env variable is defined in OS level-->
