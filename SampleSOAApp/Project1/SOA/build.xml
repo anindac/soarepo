@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="HelloWorldComposite">
+  <!-- import the common sca tools
+  <import file="common-sca-tools.xml"/> -->
+<property name="deploy.dir" location="../deploy"/>
+<!--[if !supportEmptyParas]--> <!--[endif]-->
+<!-- Add targets here -->
+
+<target name="compile-package">
+
+<echo>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</echo>
+	<property name="sca-inf.classes.dir" value="../SOA/SCA-INF/classes"/>
+	<mkdir dir="${sca-inf.classes.dir}"/>
+<echo>222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</echo>	
+	<ant antfile="${oracle.home}/bin/ant-sca-package.xml" target="package" inheritall="false">
+	<property name="oracle.home" value="${oracle.home}"/>
+	<property name="compositeDir" value="${basedir}/../SOA"/>
+	
+	<!-- needed for adf config -->
+	<property name="scac.application.home" value="${basedir}/../.."/>
+
+	<!-- name of the composite -->
+	<property name="compositeName" value="${composite.name}"/>
+
+	<!-- revision of the composite -->
+	<property name="revision" value="${composite.revision}"/>
+
+	<!-- java.passed.home passed to scac, this property will be
+		overwritten to the env.JAVA_HOME if such env variable is defined in OS level-->
+	<property name="java.passed.home" value="${java.home}"/>
+	</ant>
+</target>
+  
+</project>
