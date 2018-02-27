@@ -13,7 +13,7 @@
 	<property name="sca-inf.classes.dir" value="../SOA/SCA-INF/classes"/>
 	<mkdir dir="${sca-inf.classes.dir}"/>
 <echo>222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</echo>	
-	<ant antfile="${oracle.home}/bin/ant-sca-package.xml" target="package" inheritall="false">
+	<ant antfile="C:/Oracle/Middleware_122130/soa/bin/ant-sca-package.xml" target="package" inheritall="false">
 	<property name="oracle.home" value="${oracle.home}"/>
 	<property name="compositeDir" value="${basedir}/../SOA"/>
 	
